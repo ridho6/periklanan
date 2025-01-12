@@ -59,7 +59,7 @@ public class CRUDperiklanan {
         boolean hasil = false;
         int jumlah = 0;
         try{
-            String SQL="SELECT * FROM" + NamaTabel + " WHERE " + PrimaryKey + " = '" + isiData + "'";
+            String SQL="SELECT * FROM " + NamaTabel + " WHERE " + PrimaryKey + " = '" + isiData + "'";
             Statement perintah = getKoneksiDB().createStatement();
             ResultSet hasilData = perintah.executeQuery(SQL);
             while(hasilData.next()){
